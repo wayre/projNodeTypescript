@@ -13,7 +13,6 @@
     "moduleResolution": "node16", //
     "resolveJsonModule": true, /* Enable importing .json files. */
     "sourceMap": true, /* Create source map files for emitted JavaScript files. */
-    "outDir": "./", /* Specify an output folder for all emitted files. */
     "removeComments": true, /* Disable emitting comments. */
     "allowSyntheticDefaultImports": true, /* Allow 'import x from y' when a module doesn't have a default export. */
     "noImplicitAny": true, /* Enable error reporting for expressions and declarations with an implied 'any' type. */
@@ -23,6 +22,7 @@
     "alwaysStrict": true, /* Ensure 'use strict' is always emitted. */
     "noImplicitReturns": true, /* Enable error reporting for codepaths that do not explicitly return in a function. */
     "baseUrl": "./",
+    "outDir": "./dist", /* Specify an output folder for all emitted files. */
     "paths": {
       "@src/*": [
         "./src/*"
@@ -37,13 +37,13 @@
     ],
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "include": [
-      "./src/**/*.ts",
-      "./test/**/*.ts"
-    ],
-    "exclude": [
-      "./node_modules/*",
-      "dist"
-    ]
   },
+  "include": [
+    "./src/**/*.ts",
+    "./test/**/*.ts"
+  ],
+  "exclude": [
+    "./node_modules/*",
+    "dist"
+  ]
 }
